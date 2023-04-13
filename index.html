@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./header.css">
+    <title>Document</title>
+</head>
+<body>
+ <!-- Navigation Bar -->
+ <div class="navbar" id="navbar">
+    <!-- Left Side Logo and Text -->
+    <div class="navbar-logo">
+      <img src="./assets/two-leaves-svgrepo-com.svg" alt="Logo">
+      <span>BioDiversity</span>
+    </div>
+    <!-- Right Side Sliding Navigation Button -->
+    <div class="navbar-button" onclick="toggleDropdown()">Menu &#9776;</div>
+    <!-- Dropdown Menu -->
+    <div class="navbar-dropdown" id="dropdown">
+      <a href="#home">Home</a>
+        <a href="#introduction">Introduction</a>
+        <div class="navbar-submenu">
+          <a href="#what">What is Biodiversity</a>
+          <a href="#concern">Concerning Fact</a>
+          <a href="#iscon">What is Conservation of Biodiversity</a>
+        </div>
+      <a href="#methods">Methods of Conserving Biodiversity</a>
+      <div class="navbar-submenu">
+        <a href="#">Protected Areas</a>
+        <a href="#">Habitat Restoration</a>
+        <a href="#">Sustainable Use of Resources</a>
+        <a href="#">public Awareness and Education</a>
+        <a href="#">Integrating Biodiversity Conservation</a>
+        <a href="#">Research and Monitoring</a>
+      </div>
+    </div>
+  </div>
+
+    <!-- <div class="nav-wrap">
+        <header>
+            <div class="title">
+                <a href="./index.html">
+                    <h1>BioDiversity </h1>
+                </a>
+            </div>
+        </header>
+    </div> -->
+
+    <div class="body" id="home">
+        <div class="hero-wrap">
+            <div class="hero">
+                <div class="hero-cont">
+                    <h2>Biodiversity conservation</h2>
+                    <p>Biodiversity conservation refers to the protection, management, and sustainable use of the Earth's biological diversity, which encompasses the variety of life on our planet, including species, ecosystems, and genetic diversity. Biodiversity is crucial for the functioning of ecosystems, which provide numerous ecosystem services such as pollination, water purification, climate regulation, and food production. Biodiversity conservation is essential for maintaining the health and well-being of both human societies and natural ecosystems.</p>
+                </div>
+                <div class="hero-btn">
+                    <h3 id="btn">Know More ></h3>
+                </div>
+            </div>
+        </div>
+        <div class="sec1-wrap"id="introduction">
+            <div class="heading">
+                <h2>An Introduction to Biodiversity</h2>
+            </div>
+            <div class="sec1">
+                <div class="sec1-cont" id="what">
+                    <div class="cont">
+                        <h3>what is Biodiversity</h3>
+                        <p>Biodiversity is the variety of life on earth and includes all living organisms, from the smallest microbes to the largest mammals. It encompasses not just the number of species but also the genetic diversity within and among species, and the diversity of ecosystems and their interactions. Biodiversity is a fundamental part of our planet's ecological systems, providing essential ecosystem services such as clean air and water, soil fertility, and climate regulation. It is also a source of cultural, aesthetic, and economic value.</p>
+                    </div>
+                    <div class="img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEZ08WuQMdNkh9uC2haHmTF2Hx9HNSqrum9w&usqp=CAU" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sec1">
+                <div class="sec1-cont rev" id="concern">
+                    <div class="cont">
+                        <h3>Concerning fact</h3>
+                        <p>Despite its importance, biodiversity is under threat. Human activities, such as habitat destruction, climate change, pollution, and overexploitation of natural resources, are causing biodiversity loss at an unprecedented rate. The loss of biodiversity has far-reaching consequences, including the loss of valuable genetic resources, the collapse of ecosystems, and the extinction of species. Therefore, conserving biodiversity is critical for the long-term health and well-being of the planet and all its inhabitants.</p>
+                    </div>
+                    <div class="img">
+                        <img src="data:image/jpeg;base64,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">
+                    </div>
+                </div>
+            </div>
+            <div class="sec1">
+                <div class="sec1-cont" id="iscon">
+                    <div class="cont">
+                        <h3>what is conservation of bio diversity</h3>
+                        <p>Conservation of biodiversity refers to the protection and preservation of different species of plants, animals, and other living organisms, as well as their ecosystems and habitats. Governments, organizations, and individuals all have a role to play in this effort. Here are some of the steps that can be taken to conserve biodiversity:
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFC0n1fOiVd9SNaZCEXcfg98nSNJd-Py9APw&usqp=CAU" alt="Lowers Energy Costs">
+                    </div>
+                </div>
+        <div class="sec2-wrap" id="methods">
+            <div class="sec2">
+                <div class="heading">
+                    <h2>methods to conserve bio diversity</h2>
+                </div>
+                <div class="sec2-cont">
+                    <div class="cont2">
+                        <a href="./pages/protected.html">
+                            <div class="cont2-value e">
+                                <h3>Protected Areas</h3>
+                                <p>Establishing protected areas, such as national parks, wildlife reserves, and marine protected areas, can help to preserve the habitats and ecosystems of many species. Protected areas can also act as a safe haven for endangered species and allow for the recovery of populations that have been threatened.</p>
+                            </div>
+                        </a>
+                        <a href="./pages/Heating.html">
+                            <div class="cont2-value h">
+                                <h3>Habitat Restoration:</h3>
+                                <p>Restoring degraded habitats, such as forests and wetlands, can provide vital habitat for many species and help to maintain ecological balance. Habitat restoration can involve reforestation, erosion control, or the reintroduction of native species.</p>
+                            </div>
+                        </a>
+                        <a href="./pages/Lighting.html">
+                            <div class="cont2-value l">
+                                <h3>Sustainable Use of Resources:</h3>
+                                <p>Adopting sustainable practices, such as sustainable forestry and fishing, can help to conserve biodiversity while providing for human needs. Sustainable use of resources means using natural resources in a way that does not deplete them, so that they can be available for future generations.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="./pages/Transportation.html">
+                            <div class="cont2-value t">
+                                <h3>Public Awareness and Education</h3>
+                                <p>Increasing public awareness and education about the importance of biodiversity and the threats it faces can help to build support for conservation efforts. Educating people about the importance of biodiversity can lead to changes in behavior, such as reducing plastic waste or choosing sustainably sourced products.</p>
+                            </div>
+                        </a>
+                        <a href="./pages/Agriculture.html">
+                            <div class="cont2-value a">
+                                <h3>Integrating Biodiversity Conservation into Decision-making:</h3>
+                                <p>Integrating biodiversity conservation into decision-making processes in various sectors such as agriculture, urban planning, and infrastructure development can help to reduce the negative impacts on biodiversity. This can be achieved through the development and implementation of policies, regulations, and guidelines that promote sustainable practices.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="./pages/Space.html">
+                            <div class="cont2-value s">
+                                <h3>Research and Monitoring:</h3>
+                                <p>Research and monitoring are essential to understand the state of biodiversity and the effectiveness of conservation efforts. Research can help to identify areas of high biodiversity, species at risk, and the impact of human activities on biodiversity. Monitoring can track changes in biodiversity over time and evaluate the effectiveness of conservation strategies.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-wrap">
+        <footer>
+            <div class="footer-cont">
+                <h4>Website based on <span><a href="#home">bio-diversity conservation</a></span></h4>
+            </div>
+            <div class="phone">
+                <h4>Phone number: +919059122998</h4>
+            </div>
+        </footer>
+    </div>
+    
+
+    <script>
+        // Function to toggle the dropdown menu
+        function toggleDropdown() {
+          var dropdown = document.getElementById("dropdown");
+          dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+        btn = document.querySelector(".hero-btn");
+h3 = document.querySelector("#btn");
+cont = document.querySelector(".hide");
+btn.addEventListener("click", () => {
+    if(cont.style.display == "none"){
+        cont.style.display = "inline";
+        h3.innerText = "Less >"
+    }else{
+        cont.style.display = "none";
+        h3.innerText = "Know More >"
+    }
+});
+    </script>    
+    
+</body>
+</html>

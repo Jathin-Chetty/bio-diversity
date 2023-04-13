@@ -1,0 +1,112 @@
+header{
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(25, 30, 10, 0.949);
+    z-index: 9;
+    box-shadow: 0px 2px 20px black;
+}
+
+.title{
+    padding: 30px;
+}
+
+.title a{
+    text-decoration: none;
+    color: rgb(235, 216, 175);
+}
+
+.body{
+    padding-top: 8vh;
+}
+
+.navbar-brand{
+    font-size: large;
+}
+
+
+
+.pages ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.pages a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.navbar {
+    background-color: rgba(25, 30, 10, 0.949);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position:fixed;
+    width: 100vw;
+    height: 8vh;
+  }
+
+  /* Left Side Logo and Text */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-logo img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  .navbar-logo span {
+    font-size: 20px;
+    color: white;
+  }
+
+  /* Right Side Sliding Navigation Button */
+  .navbar-button {
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+  }
+
+  /* Dropdown Menu */
+  .navbar-dropdown {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background-color: rgba(25, 30, 10, 0.949);
+    padding: 10px;
+    display: none;
+    height: 100vh;
+    font-size: 20px;
+  }
+
+  .navbar-dropdown a {
+    display: block;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  /* Sub-menu */
+  .navbar-submenu {
+    display: block;
+    margin-top: 5px;
+    padding-left: 15px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .navbar-submenu a {
+    text-decoration:wavy;
+  }
